@@ -1,0 +1,220 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 1% auto 1% auto;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: 'Modern Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Modern Sans', sans-serif;
+  font-size: 3.4rem;
+  margin: 5% 0 4%;
+}
+
+h3 {
+  font-size: 1.4rem;
+  word-spacing: 15px;
+  letter-spacing: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: grey;
+}
+
+p {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+a {
+  color: black;
+  font-size: 1.6rem;
+}
+
+/* Navigation bar */
+
+.navbar{
+  background-color: #fff;
+  padding: 2% 12%;
+  width: 100%;
+}
+
+.header-link {
+  font-size: 1.4rem;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: #005555;
+}
+
+.sticker {
+  width: 45px;
+}
+
+/* Cover page */
+.top-section {
+  background-color: #f6f5f4;
+  background: linear-gradient(180deg, rgba(238, 237, 235, 0.88) 0%, rgba(240, 239, 237, 0.915625) 26.56%, rgba(244, 243, 242, 0.950931) 53.12%, rgba(250, 249, 248, 0.973072) 76.56%, #FFFFFF 100%);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 12%;
+  padding-bottom: 8%;
+  z-index: 1;
+}
+
+.logo {
+  margin: auto;
+  width: 22%;
+  padding-bottom: 2%;
+}
+
+/* About me section */
+.dp {
+  width: 95%;
+  text-align: left;
+}
+
+#about-me {
+  padding: 7% 10%;
+  height: 100%;
+}
+
+.desc {
+  padding: 0% 5%;
+}
+
+.link {
+  margin-left: 40px;
+}
+
+/* Education section */
+.education {
+  padding: 3% 10% 0 15%;
+}
+
+.institute {
+  text-align: left;
+}
+
+.details {
+  text-align: left;
+  padding-left: 14%;
+}
+
+.education-row {
+  margin-top: 3%;
+}
+
+/* Experience section */
+#experience {
+  margin: 10% 0;
+  height: 100%;
+}
+
+#experience-carousel {
+  margin: 6% 4%;
+  height: 500px;
+  padding: 0% 20%;
+}
+
+.here-link{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.daa-logo {
+  width: 16%;
+  margin-bottom: 3%;
+}
+
+.srmpedia-logo {
+  width: 18%;
+  margin-bottom: 3%;
+}
+
+.aaruush-logo {
+  width: 32%;
+  margin-bottom: 3%;
+}
+
+.green-vitality-logo {
+  width: 32%;
+  margin-bottom: 3%;
+}
+
+/* Skills section */
+#skills {
+  padding: 0 10%;
+  text-align: center;
+}
+
+.skills-row {
+  margin: 5% 0;
+}
+
+.card {
+  width: 70%;
+  height: 8rem;
+  margin: 3% auto;
+  vertical-align: middle;
+  border-color: #533483;
+  border-width: 3px;
+}
+
+.card:hover {
+  width: 74%;
+  height: 8.3rem;
+}
+
+.card-title {
+  position: relative;
+  top: 35%;
+}
+
+/* Contact section */
+#contact {
+  padding: 4% 10%;
+}
+
+.form-control:hover {
+  border-color: #277BC0;
+}
+
+.btn {
+  width: 15%;
+}
+
+.btn:hover {
+  background-color: #277BC0;
+}
+
+.mb-3{
+  padding-bottom: 2%;
+}
+
+.copyright{
+  margin: 2%;
+}
+
+@media(max-width: 768px) {}
