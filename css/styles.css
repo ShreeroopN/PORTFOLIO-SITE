@@ -43,6 +43,7 @@ p {
 }
 
 a {
+  font-family: 'Merriweather Sans', sans-serif;
   color: black;
   font-size: 1.6rem;
 }
@@ -52,12 +53,13 @@ a {
   background-color: #fff;
   padding: 2% 12%;
   width: 100%;
-  margin-top: 10%;
+  display: none;
+  text-align: left;
 }
 
 .header-link {
-  font-size: 1.4rem;
-  margin: 10px;
+  font-size: 1.2rem;
+  margin: 40px 10px;
   text-decoration: none;
 }
 
@@ -65,30 +67,44 @@ a {
   color: #005555;
 }
 
-.sticker {
-  width: 45px;
+.navbar-brand{
+  width: 8%;
+}
+
+.navbar-logo{
+  width: 40%;
+  height: auto;
+}
+.navbar-toggler-icon{
+  border-radius: 100%;
 }
 
 /* Cover page */
-/* #top-container {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-} */
+.top-container {
+  /* background: linear-gradient(180deg, rgba(238, 237, 235, 0.88) 0%, rgba(240, 239, 237, 0.915625) 26.56%, rgba(244, 243, 242, 0.950931) 53.12%, rgba(250, 249, 248, 0.973072) 76.56%, #FFFFFF 100%); */
+  height: 100vh;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
 
 .top-section {
-  background: linear-gradient(180deg, rgba(238, 237, 235, 0.88) 0%, rgba(240, 239, 237, 0.915625) 26.56%, rgba(244, 243, 242, 0.950931) 53.12%, rgba(250, 249, 248, 0.973072) 76.56%, #FFFFFF 100%);
   position: relative;
-  padding-top: 160px;
+  top: 22%;
+}
+
+.picture{
+  position: relative;
+  top: 22%;
+  display: inline-block;
 }
 
 .logo {
   margin: auto;
+  margin-bottom: 2%;
   width: 300px;
-  padding-bottom: 2%;
-  position: relative;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .arrow {
@@ -216,6 +232,10 @@ a {
   margin-bottom: 3%;
 }
 
+.experience-body{
+  margin: 4% 0;
+}
+
 /* Skills section */
 #skills {
   padding: 0 10%;
@@ -278,30 +298,108 @@ a {
 }
 
 @media(max-width: 988px) {
-  .top-section{
-    padding-top: 220px;
-    margin-bottom: 40%;
+
+  .logo {
+    width: 220px;
+    margin-bottom: 8%;
   }
-  .logo{
-    width: 250px;
+
+  h1 {
+    font-size: 2.8rem;
   }
-  h1{
-    font-size: 3rem;
-  }
-  h2{
+
+  h2 {
     font-size: 2.4rem;
     margin: 20% auto;
   }
-  h3{
+
+  h3 {
     font-size: 1rem;
   }
-  h4{
+
+  h4 {
     font-size: 1.2rem;
   }
-  h5{
+
+  h5 {
     font-size: 1.1rem;
   }
-  p{
+
+  p {
     font-size: 1rem;
   }
+  #experience-carousel{
+    margin: 6% 0;
+    padding: 0;
+  }
+  .experience-body{
+    padding: 0 10%;
+    margin: 10% 0;
+  }
+  .navbar-logo{
+    width: 100%;
+  }
+}
+
+.container-hexa{
+  position: absolute;
+  height: 100vh;
+  text-align: left;
+}
+
+.row-hexa{
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+
+.row-hexa:nth-child(even){
+  margin-left: 2px;
+}
+
+.hexagon{
+  width: 100px;
+  height: 110px;
+  margin: 2px;
+  background-color: #fff;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: animation 4s linear infinite;
+  transition: 1s;
+}
+
+.hexagon:hover{
+  background-color: #00FFD1;
+  transition: 0s;
+}
+
+@keyframes animation {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  /* 50%{
+    filter: hue-rotate(180deg);
+  } */
+  100%{
+    filter: hue-rotate(90deg);
+  }
+}
+
+.hexagon:after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  background-color: #fff;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon:before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.03);
+  z-index: 2;
 }

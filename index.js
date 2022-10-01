@@ -1,8 +1,7 @@
-// $(".navbar").hide();
-// $(".top-section").focus(function(){
-//   console.log("Hiuas");
-//   $(".navbar").slideDown();
-// })
-// // $(".top-section").on("mouseenter",function(){
-// //   $(".navbar").slideUp();
-// // })
+$(window).on("scroll",function(){
+  if(window.pageYOffset > 380){
+    $(".navbar").slideDown();
+  } else{
+    $(".navbar").slideUp();
+  }
+});
