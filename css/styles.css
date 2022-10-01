@@ -52,15 +52,15 @@ a {
 /* Navigation bar */
 .navbar {
   background-color: #fff;
-  padding: 2% 12%;
+  padding: 2% 8%;
   width: 100%;
   display: none;
   text-align: left;
 }
 
 .header-link {
-  font-size: 1.2rem;
-  margin: 40px 10px;
+  font-size: 1.1rem;
+  margin: 40px 20px;
   text-decoration: none;
 }
 
