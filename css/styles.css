@@ -92,6 +92,14 @@ a {
   top: 22%;
 }
 
+.navbar-toggler{
+  border-radius: 100%;
+  background-color: white;
+  padding: 5%;
+  position: relative;
+  left: 80%;
+}
+
 /* Cover page */
 .top-container {
   /* background: linear-gradient(180deg, rgba(238, 237, 235, 0.88) 0%, rgba(240, 239, 237, 0.915625) 26.56%, rgba(244, 243, 242, 0.950931) 53.12%, rgba(250, 249, 248, 0.973072) 76.56%, #FFFFFF 100%); */

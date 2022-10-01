@@ -5,3 +5,8 @@ $(window).on("scroll",function(){
     $(".navbar").slideUp();
   }
 });
+
+if (navigator.userAgent.match(/Mobile/)){
+  $(".navbar").css("background-color", "transparent");
+  $(".navbar-brand").css("display", "none");
+}
