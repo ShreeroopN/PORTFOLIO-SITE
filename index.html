@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat&family=Open+Sans&family=Orbitron:wght@600&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e7421d0b35.js" crossorigin="anonymous"></script>
   <link rel="icon" href="favicon.ico">
-  <link href="http://fonts.cdnfonts.com/css/modern-sans" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/modern-sans" rel="stylesheet">
   <style>
-    @import url('http://fonts.cdnfonts.com/css/modern-sans');
+    @import url('https://fonts.cdnfonts.com/css/modern-sans');
   </style>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
@@ -193,25 +193,32 @@
   <nav class="navbar fixed-top navbar-expand-sm">
     <div class="container-fluid" id="header">
       <a class="navbar-brand" href="#"> <img src="images/navbar-logo.png" class="navbar-logo" alt="logo"> </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> -->
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="header-link" href="#about-me">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="header-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="header-link" href="https://drive.google.com/file/d/1bZodOqc5WSh6ggUxhRtQm_7h5pFToOAa/view?usp=sharing" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="header-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> -->
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/navbar-logo.png" class="offbar-logo" alt="logo"> </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="header-link" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="header-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="header-link" href="https://drive.google.com/file/d/1bZodOqc5WSh6ggUxhRtQm_7h5pFToOAa/view?usp=sharing" target="_blank">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="header-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
