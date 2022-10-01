@@ -1,6 +1,7 @@
 body {
   text-align: center;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -380,7 +381,7 @@ a {
     filter: hue-rotate(180deg);
   } */
   100%{
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(360deg);
   }
 }
 
@@ -400,6 +401,6 @@ a {
   position: absolute;
   width: 50%;
   height: 50%;
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(243, 243, 243, 0.3);
   z-index: 2;
 }
