@@ -94,8 +94,11 @@ a {
 
 .navbar-toggler{
   border-radius: 100%;
+  border: none;
+  /* box-shadow: 0 0 20px #EEEEEE; */
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
   background-color: white;
-  padding: 5%;
+  padding: 8%;
   position: relative;
   left: 80%;
 }
