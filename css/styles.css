@@ -345,8 +345,9 @@ a {
 
 .container-hexa{
   position: absolute;
-  height: 100vh;
   text-align: left;
+  width: 100%;
+  overflow: hidden;
 }
 
 .row-hexa{
